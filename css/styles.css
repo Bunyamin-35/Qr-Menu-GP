@@ -1,17 +1,101 @@
+:root {
+    --bg-1: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg);
+    --bg-2: url(https://iasbh.tmgrup.com.tr/111ad1/650/344/0/12/700/383?u=http://i.sabah.com.tr/sbh/2016/12/21/1482317898915.jpg);
+    --bg-3: url(https://iasbh.tmgrup.com.tr/2f17aa/650/344/0/4/499/266?u=https://isbh.tmgrup.com.tr/sbh/2018/08/12/gazli-iceceklerin-icerisinde-neler-var-en-cok-tuketilen-mesrubat-turu-1534064585854.jpg);
+    --bg-4: url(https://www.taddoy.com/uploads/6e68382537.jpg);
+    --bg-5: url(http://kebapcibey.com.tr/uploads/news/1524580446Kebap.png);
+    --bg-6: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg);
+    --green:#badc58;
+
+}
+
 .fs-10 {
     font-size: 10px;
 }
 .navbar-bg ,.footer-bg {
     background-color: #f1c40f;
 }
-.card-header{
+/* .card-header{
     background:transparent;
 }
 .card-image {
     width: 100%;
     height: 15vw;
     object-fit: cover;
-}
-.card:hover{
+} */
+/* .card:hover{
     transform: scale(1.05);
-} 
+}  */
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 100vh;
+    transition: 0.25s;
+    color: white;
+}
+
+.cards {
+    display: flex;
+    max-width: 800px;
+    width: calc(100% - 100px);
+    height: 400px;
+}
+.cards .card {
+    position: relative;
+    min-width: 60px;
+    background: var(--bg);
+    overflow: hidden;
+    margin: 5px;
+    background-size: auto 110%;
+    background-position:center;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.5s var(cubic-bezier(0.075, 0.82, 0.165, 1));
+}
+.cards .card .label {
+    display: flex;
+    position: absolute;
+    right: 0;
+    height: 40px;
+    transition: 0.5s var(cubic-bezier(0.165, 0.84, 0.44, 1));
+}
+.cards .card.active .label {
+    top:20px;
+    left: 15px;
+}
+.cards .card:not(.active) .label {
+    top:20px;
+    left: 15px;
+}
+.cards .card.active {
+    flex-grow: 10000;
+    background-size: auto 100%;
+}
+.cards .card .info .title {
+    font-weight: bold;
+    font-size: 1.125rem;
+}
+.cards .card .label .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 40px;
+    height: 40px;
+    background-color:white;
+    color: var(--green);
+    border-radius: 50%;
+}
+
+.cards .card .label .info {
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-left: 10px;
+    white-space: pre;
+    transition: 1s var(cubic-bezier(0.075, 0.82, 0.165, 1));
+
+}
+
