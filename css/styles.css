@@ -1,33 +1,50 @@
 :root {
-    --bg-1: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg);
-    --bg-2: url(https://iasbh.tmgrup.com.tr/111ad1/650/344/0/12/700/383?u=http://i.sabah.com.tr/sbh/2016/12/21/1482317898915.jpg);
-    --bg-3: url(https://iasbh.tmgrup.com.tr/2f17aa/650/344/0/4/499/266?u=https://isbh.tmgrup.com.tr/sbh/2018/08/12/gazli-iceceklerin-icerisinde-neler-var-en-cok-tuketilen-mesrubat-turu-1534064585854.jpg);
-    --bg-4: url(https://www.taddoy.com/uploads/6e68382537.jpg);
-    --bg-5: url(http://kebapcibey.com.tr/uploads/news/1524580446Kebap.png);
-    --bg-6: url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg);
+    --cb: cubic-bezier(0.1,0.5,0.1,0.1);
     --green:#badc58;
-
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .fs-10 {
     font-size: 10px;
 }
-.navbar-bg ,.footer-bg {
-    background-color: #f1c40f;
+body{
+    display: flex;
+    justify-content: space-around;
+    height: 100vh;
+    color: white;
 }
-/* .card-header{
-    background:transparent;
+.infobar {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    
 }
-.card-image {
-    width: 100%;
-    height: 15vw;
-    object-fit: cover;
-} */
-/* .card:hover{
-    transform: scale(1.05);
-}  */
+.footer {
+    margin-top: 1rem;
+    margin-right:1rem;
+}
 
-.content {
+.infocard {
+    background: var(--bg);
+    width:300px;    
+    background-size: cover;
+    border-radius: 20px;
+    height: 600px;
+    align-items: center;
+}
+.footercard {
+    background: var(--bg);
+    width:300px;    
+    background-size: cover;
+    border-radius: 20px;
+    height: 600px;
+}
+
+/* .content {
+    background: red;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,58 +52,79 @@
     height: 100vh;
     transition: 0.25s;
     color: white;
-}
+} */
 
 .cards {
+    /* background: red; */
     display: flex;
-    max-width: 800px;
+    flex-direction: column;
+    width: 600px;
+    margin-top: 1rem;
+    margin-bottom: 0;
+    max-height: 600px;
+    /* height: 600px; */
+    /* max-height: 800px;
+    height: calc(100% - 100px); */
+    /* max-width: 800px;
     width: calc(100% - 100px);
-    height: 400px;
+    height: 400px; */
 }
 .cards .card {
     position: relative;
-    min-width: 60px;
+    min-height: 40px;
     background: var(--bg);
     overflow: hidden;
-    margin: 5px;
-    background-size: auto 110%;
+    margin-bottom   : 5px;
+    background-size: cover;
     background-position:center;
     cursor: pointer;
     border-radius: 20px;
-    transition: 0.5s var(cubic-bezier(0.075, 0.82, 0.165, 1));
+    transition: 1s var(--cb);
 }
 .cards .card .label {
     display: flex;
-    position: absolute;
-    right: 0;
-    height: 40px;
-    transition: 0.5s var(cubic-bezier(0.165, 0.84, 0.44, 1));
+    align-items: center;
+    
 }
 .cards .card.active .label {
-    top:20px;
-    left: 15px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    
 }
 .cards .card:not(.active) .label {
-    top:20px;
-    left: 15px;
+    display: flex;
+    margin-top: 5px;
+    margin-left: 20px;
+
 }
 .cards .card.active {
     flex-grow: 10000;
-    background-size: auto 100%;
+    background-size:cover;
 }
 .cards .card .info .title {
     font-weight: bold;
     font-size: 1.125rem;
 }
-.cards .card .label .icon {
+.cards .card.active .label .icon {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-width: 40px;
-    height: 40px;
+    min-width: 30px;
+    height: 30px;
     background-color:white;
     color: var(--green);
     border-radius: 50%;
+}
+.cards .card:not(.active) .label .icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    color: var(--green);
 }
 
 .cards .card .label .info {
@@ -95,7 +133,23 @@
     justify-content:center;
     margin-left: 10px;
     white-space: pre;
-    transition: 1s var(cubic-bezier(0.075, 0.82, 0.165, 1));
+}
 
+.cards .card:not(.active) .shadow {
+    display: none;
+}
+.cards .card.active .shadow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 8rem;
+    left: 2rem;
+    right: 2rem;
+    height: 100px;
+    transition: 1s var(--cb);
+    border-radius: 20px;
+    background: linear-gradient(to right,#0004,#badc58);
+    overflow: hidden;
+    padding: 0.5rem;
 }
 
