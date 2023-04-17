@@ -4,226 +4,264 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <!-- Bootstrap CSS -->
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous"> -->
-    <link rel="stylesheet" href="fontawesome-free-6.2.1-web/css/all.min.css"> 
+    <!-- Google Fonts Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="css/styles.css">
     <title>Gözde Pide</title>
   </head>
   <body>
-    <div class="infobar">
-        <div style="--bg:url(https://images.pexels.com/photos/914388/pexels-photo-914388.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="infocard">
-            <!-- <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Çorba Çeşitleri</div>
-                </div>
-            </div> -->
-        </div>
-    </div>
-    <div class="cards">
-        <div style="--bg:url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg)" class="card active">
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Çorba Çeşitleri</div>
-                </div>
-                <div class="shadow">
-                    <div class="sort">
-                        <ul>
-                            <li>Mercimek</li>
-                            <li>Ezogelin</li>
-                            <li>Kelle Paça</li>
-                            <li>İşkembe</li>
-                            <li>Tavuk Suyu</li>
-                        </ul>
+    <main>
+        <section id="header">
+            <ul>
+                <li style="--bg:url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="header-img">
+                    <div class="content">
+                        <h1>Hoş Geldiniz</h1>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id repellendus explicabo soluta ratione, vitae saepe est tempora, quisquam reiciendis, laudantium adipisci recusandae repellat placeat temporibus cumque dolor similique provident quibusdam?</p>
+                        <a href="#" class="btn">
+                            <ion-icon name="call"></ion-icon>
+                            Sipariş Ver
+                        </a>
                     </div>
-                    <div class="prices">
-                        <ul>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                        </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="cards">
+            <ul class="card-list">
+                <h2>Menu</h2>
+                <li style="--bg:url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg)" class="card active">
+                    <div class="label">
+                        <div class="icon">
+                            <ion-icon name="restaurant-sharp"></ion-icon>
+                        </div>
+                        <div class="info">
+                            <div class="title">Çorba Çeşitleri</div>
+                        </div>
+                        <div class="shadow">
+                            <div class="sort">
+                                <h4>Menü</h4>
+                                <ul class="sortlist">
+                                    <li class="sortlist-item">Mercimek</li>
+                                    <li class="sortlist-item">Ezogelin</li>
+                                    <li class="sortlist-item">Kelle Paça</li>
+                                    <li class="sortlist-item">İşkembe</li>
+                                    <li class="sortlist-item">Tavuk Suyu</li>
+                                </ul>
+                            </div>
+                            <div class="prices">
+                                <h4>Fiyat</h4>
+                                <ul class="pricelist">
+                                    <li class="pricelist-item">15 
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div style="--bg:url(https://cdn.yemek.com/mncrop/940/625/uploads/2015/08/kusbasili-pide-tarifi.jpg)" class="card">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Pide Çeşitleri</div>
-                </div>
-                <div class="shadow">
-                    <div class="sort">
-                        <ul>
-                            <li>Kıymalı</li>
-                            <li>Kıymalı Kaşarlı</li>
-                            <li>Kuşbaşılı</li>
-                            <li>Kuşbaşılı Kaşarlı</li>
-                            <li>Sade Kaşarlı</li>
-                        </ul>
+                </li>
+                <li style="--bg:url(https://cdn.yemek.com/mncrop/940/625/uploads/2015/08/kusbasili-pide-tarifi.jpg)" class="card">
+                    <div class="label">
+                        <div class="icon">
+                            <ion-icon name="restaurant-sharp"></ion-icon>
+                        </div>
+                        <div class="info">
+                            <div class="title">Pide Çeşitleri</div>
+                        </div>
+                        <div class="shadow">
+                            <div class="sort">
+                                <h4>Menu</h4>
+                                <ul class="sortlist">
+                                    <li>Kıymalı</li>
+                                    <li>Kıymalı Kaşarlı</li>
+                                    <li>Kuşbaşılı</li>
+                                    <li>Kuşbaşı Kaşarlı</li>
+                                    <li>Kaşarlı</li>
+                                </ul>
+                            </div>
+                            <div class="prices">
+                                <h4>Fiyat</h4>
+                                <ul class="pricelist">
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="prices">
-                        <ul>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                        </ul>
+                </li>
+                <li style="--bg:url(https://images.pexels.com/photos/7462777/pexels-photo-7462777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="card">
+                    <div class="label">
+                        <div class="icon">
+                            <ion-icon name="restaurant-sharp"></ion-icon>
+                        </div>
+                        <div class="info">
+                            <div class="title">Kebap Çeşitleri</div>
+                        </div>
+                        <div class="shadow">
+                            <div class="sort">
+                                <h4>Menu</h4>
+                                <ul class="sortlist">
+                                    <li>Adana</li>
+                                    <li>Urfa</li>
+                                    <li>Tavuk Şiş</li>
+                                    <li>Kuzu Şiş</li>
+                                    <li>İskender</li>
+                                </ul>
+                            </div>
+                            <div class="prices">
+                                <h4>Fiyat</h4>
+                                <ul class="pricelist">
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div style="--bg:url(https://images.pexels.com/photos/7462777/pexels-photo-7462777.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="card">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Kebap Çeşitleri</div>
-                </div>
-                <div class="shadow">
-                    <div class="sort">
-                        <ul>
-                            <li>Adana</li>
-                            <li>Urfa</li>
-                            <li>İskender</li>
-                            <li>Tavuk Şiş</li>
-                            <li>Et Şiş</li>
-                        </ul>
+                </li>
+                <li style="--bg:url(https://images.pexels.com/photos/3008/drinks-supermarket-cans-beverage.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="card">
+                    <div class="label">
+                        <div class="icon">
+                            <ion-icon name="restaurant-sharp"></ion-icon>
+                        </div>
+                        <div class="info">
+                            <div class="title">İçecek Çeşitleri</div>
+                        </div>
+                        <div class="shadow">
+                            <div class="sort">
+                                <h4>Menu</h4>
+                                <ul class="sortlist">
+                                    <li>Kola</li>
+                                    <li>Ayran</li>
+                                    <li>Gazoz</li>
+                                    <li>Şalgam</li>
+                                    <li>Meyve Suyu</li>
+                                </ul>
+                            </div>
+                            <div class="prices">
+                                <h4>Fiyat</h4>
+                                <ul class="pricelist">
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="prices">
-                        <ul>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                        </ul>
+                </li>   
+                <li style="--bg:url(https://images.pexels.com/photos/7803117/pexels-photo-7803117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="card last">
+                    <div class="label">
+                        <div class="icon">
+                            <ion-icon name="restaurant-sharp"></ion-icon>
+                        </div>
+                        <div class="info">
+                            <div class="title">Tatlı Çeşitleri</div>
+                        </div>
+                        <div class="shadow">
+                            <div class="sort">
+                                <h4>Menu</h4>
+                                <ul class="sortlist">
+                                    <li>Baklava</li>
+                                    <li>Kadayıf</li>
+                                    <li>Künefe</li>
+                                    <li>Sütlaç</li>
+                                    <li>Tahinli</li>
+                                </ul>
+                            </div>
+                            <div class="prices">
+                                <h4>Fiyat</h4>
+                                <ul class="pricelist">
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                    <li class="pricelist-item">15
+                                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/af/Turkish_lira_symbol_black.svg" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                </div>
-            </div>
-        </div>
-        <div style="--bg:url(https://images.pexels.com/photos/3008/drinks-supermarket-cans-beverage.jpg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="card">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">İçecek Çeşitleri</div>
-                </div>
-                <div class="shadow">
-                    <div class="sort">
-                        <ul>
-                            <li>Kola</li>
-                            <li>Portakallı Gazoz</li>
-                            <li>Gazoz</li>
-                            <li>Meyve Suyu</li>
-                            <li>Ayran</li>
-                        </ul>
+                </li>
+            </ul>
+        </section>
+        <section id="footer">
+            <ul>
+                <li style="--bg:url(https://images.pexels.com/photos/259915/pexels-photo-259915.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="footer-img">
+                    <div class="content">
+                        <h1>Afiyet Olsun</h1>
                     </div>
-                    <div class="prices">
-                        <ul>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="--bg:url(https://images.pexels.com/photos/7803117/pexels-photo-7803117.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1)" class="card">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Tatlı Çeşitleri</div>
-                </div>
-                <div class="shadow">
-                    <div class="sort">
-                        <ul>
-                            <li>Baklava</li>
-                            <li>Kadayıf</li>
-                            <li>Künefe</li>
-                            <li>Tahinli</li>
-                            <li>Sütlaç</li>
-                        </ul>
-                    </div>
-                    <div class="prices">
-                        <ul>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                            <li>15 <i class="fa-solid fa-turkish-lira-sign"></i></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div style="--bg:url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg);margin-bottom: 0px;" class="card">
-            <div class="shadow"></div>
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Afiyet Olsun</div>
-                    <!-- <div>Lorem ipsum dolor sit amet.</div> -->
-                </div>
-            </div>
-        </div>
-    </div>
-        
-    <div class="footer">
-        <div style="--bg:url(https://cdn.yemek.com/mnresize/1250/833/uploads/2016/10/lokanta-usulu-mercimek-corbasi-one-cikan-yeni.jpg)" class="footercard">
-            <!-- <div class="shadow"></div>  
-            <div class="label">
-                <div class="icon">
-                    <ion-icon name="restaurant-sharp"></ion-icon>
-                </div>
-                <div class="info">
-                    <div class="title">Çorba Çeşitleri</div>
-                </div>
-            </div> -->
-        </div>            
-    </div>  
+                </li>
+            </ul>
+        </section>
+    </main>
+
     <!-- js/script.js -->
     <script src="js/script.js"></script>
     <!-- js/script.js -->
+
     <!-- Ionicons/ionic.io -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <!-- Ionicons/ionic.io -->
 
-    <!-- Optional JavaScript; choose one of the two! -->
-
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    -->
   </body>
 </html>
